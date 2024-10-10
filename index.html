@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paramitha School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        header img {
+            width: 120px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            border: 2px solid white;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin: 10px 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+        h2 {
+            font-size: 1.8em;
+            margin: 10px 0;
+        }
+        nav {
+            background-color: #666;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ccc;
+        }
+        main {
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+            padding: 30px;
+            width: 90%;
+            max-width: 600px;
+            transition: transform 0.3s;
+            background-color: white;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image-wrapper {
+            margin: 10px;
+            text-align: center;
+        }
+        .image-wrapper img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .button {
+            background-color: #666;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #777;
+        }
+        .read-more {
+            cursor: pointer;
+            color: #666;
+        }
+        .read-more:hover {
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMI1702XfUDBMEXG63qUyQqj3iiyhLPgYsyQ&s" alt="School Logo">
+    <h1>Welcome To Paramitha 2</h1>
+    <h2>Vocational School Website!</h2>
+    <h3>PINK JITU!</h3>
+</header>
+
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#programs">Programs</a>
+    <a href="#events">Events</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+    <section id="about" class="card">
+        <h2>About Us</h2>
+        <p id="about-text">SMK Paramitha adalah sekolah menengah kejuruan ter kemuka yang berkom itmen untuk membentuk generasi muda yang siap menghadapi masa depan melalui pendidikan kejuruan dan teknis berkualitas. Didirikan dengan visi untuk memberdayakan pemuda dengan keterampilan dan pengetahuan yang relevan, SMK Paramitha menawarkan kurikulum komprehensif yang dirancang untuk memenuhi kebutuhan dunia kerja modern.</p>
+        <p id="about-text-hidden" style="display: none;">Di SMK Paramitha, kami menekankan pada keunggulan akademis dan pengembangan karakter. Tujuan kami adalah mencetak individu yang siap untuk unggul dalam bidang yang mereka pilih, baik itu di bidang teknologi, manajemen logistik, maupun teknik jaringan. Melalui pembelajaran berbasis praktik, kemitraan industri, dan proyek dunia nyata, kami memastikan bahwa para siswa mendapatkan pengalaman praktis dan kepercayaan diri untuk sukses dalam karir masa depan mereka.</p>
+        <span id="read-more" class="read-more" onclick="showMore()">Read More</span>
+    </section>
+
+    <section id="programs" class="card">
+        <h2>Programs</h2>
+        <p>We offer a variety of programs to help you achieve your goals. Our programs are designed to provide you with the skills and knowledge you need to succeed in your chosen field.</p>
+        <ul>
+            <li>Manajemen Logistik: Learn the skills you need to succeed in the logistics industry.</li>
+            <li>Rekayasa Perangkat Lunak: Develop the skills you need to design and develop software.</li>
+            <li>Teknologi Komputer Jaringan: Learn how to design and implement computer networks.</li>
+        </ul>
+    </section>
+
+    <section id="events" class="card">
+        <h2>Events</h2>
+        <p>Stay up to date with our latest events and activities. From open houses to workshops, we have something for everyone.</p>
+        <p>Openhouse - On November</p>
+    </section>
+
+    <section id="gallery" class="card">
+        <h2>Gallery</h2>
+        <div class="image-container">
+            <div class="image-wrapper">
+                <h3>Manajemen Logistik Gallery:</h3>
+                <p>-Empty-</p>
+            </div>
+            <div class="image-wrapper">
+                <h3>TKJ Gallery:</h3>
+                <p>-Empty-</p>
+            </div>
+            <div class="image-wrapper">
+                <h2>RPL Gallery</h2>
+                <div class="image-container">
+                    <div class="image-wrapper">
+                        <img src="https://nebuloousrpl.carrd.co/assets/images/image02.jpg?v=889298f8" alt="Image 02 " loading="lazy" style="width: 200px; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="https://nebuloousrpl.carrd.co/assets/images/image03.jpg?v=889298f8" alt="Image 03" loading="lazy" style="width: 200px; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="https://nebuloousrpl.carrd.co/assets/images/image04.jpg?v=889298f8" alt="Image 04" loading="lazy" style="width: 200px; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="https://nebuloousrpl.carrd.co/assets/images/image06.jpg?v=889298f8" alt="Image 06" loading="lazy" style="width: 200px; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="https://nebuloousrpl.carrd.co/assets/images/image07.jpg?v=889298f8" alt="Image 07" loading="lazy" style="width: 200px; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="https://nebuloousrpl.carrd.co/assets/images/image09.jpg?v=889298f8" alt="Image 09" loading="lazy" style="width: 200px; height: 150px; object-fit: cover;">
+                    </div>
+ </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="card">
+        <h2>Contact</h2>
+        <p>Get in touch with us! We'd love to hear from you. Whether you have a question, comment, or just want to say hi, we're here to listen.</p>
+        <p>Email: <a href="mailto:">[Your Email]</a></p>
+        <p>Call us: <a href="tel:">[Your Phone Number]</a></p>
+        <p>Our Adress: Kompleks DDN No 68 Curug, Jl. Raya Kalimalang, Pondok Kelapa, Duren Sawit, Jakarta Timur 13450</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2022 Paramitha School</p>
+</footer>
+
+<script>
+    function showMore() {
+        var text = document.getElementById("about-text-hidden");
+        var readMore = document.getElementById("read-more");
+        if (text.style.display === "none") {
+            text.style.display = "block";
+            readMore.textContent = "Read Less";
+        } else {
+            text.style.display = "none";
+            readMore.textContent = "Read More";
+        }
+    }
+</script>
+
+</body>
+</html>
